@@ -1,0 +1,7 @@
+{
+  "name": "ExamplePlugin",
+  "main": "cc.sfclub.example.Main",
+  "version": "0.0.1",
+  "autoRegister": true,
+  "dataClass": "cc.sfclub.example.OurData"
+}
