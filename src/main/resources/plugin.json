@@ -1,7 +1,7 @@
 {
-  "name": "ExamplePlugin",
-  "main": "cc.sfclub.example.Main",
+  "name": "Telegram Adapter",
+  "main": "cc.sfclub.telegram.AdapterMain",
   "version": "0.0.1",
   "autoRegister": true,
-  "dataClass": "cc.sfclub.example.OurData"
+  "dataClass": "cc.sfclub.telegram.Config"
 }
