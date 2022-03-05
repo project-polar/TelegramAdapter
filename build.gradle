@@ -12,11 +12,11 @@ configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+
     compileOnly 'org.greenrobot:eventbus:3.2.0'
     compileOnly 'org.slf4j:slf4j-api:1.7.30'
     compileOnly 'com.github.saltedfishclub:PolarCore:dev-SNAPSHOT'
-    implementation 'com.github.pengrad:java-telegram-bot-api:5.0.1'
+    implementation 'org.telegram:telegrambots:5.7.1'
 }
 allprojects {
     repositories {

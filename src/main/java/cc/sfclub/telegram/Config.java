@@ -1,5 +1,10 @@
 package cc.sfclub.telegram;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Config {
-    public String token = "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11";
+    public String token = "TOKEN HERE";
+    public String botName = "thePolarBot";
+    public List<Long> preloadGroups = new ArrayList<>();
 }
