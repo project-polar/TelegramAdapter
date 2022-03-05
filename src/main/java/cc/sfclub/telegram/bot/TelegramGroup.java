@@ -42,7 +42,6 @@ public class TelegramGroup extends ChatGroup {
     public void sendMessage(String message) {
         var msg = new SendMessage();
         msg.setText(message);
-        msg.enableMarkdownV2(true);
         msg.setChatId(String.valueOf(super.getID()));
         try {
             adapter.execute(msg);
@@ -57,6 +56,7 @@ public class TelegramGroup extends ChatGroup {
         msg.setText(message);
        // msg.enableMarkdown(true);
         msg.setChatId(String.valueOf(getID()));
+        
         msg.setReplyToMessageId((int) messageId);
         try {
             adapter.execute(msg);

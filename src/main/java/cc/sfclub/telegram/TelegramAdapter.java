@@ -47,7 +47,7 @@ public class TelegramAdapter extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         var message = update.getMessage();
-        if (!message.hasText()) {
+        if (message == null || !message.hasText()) {
             // current not planned
             return;
         }

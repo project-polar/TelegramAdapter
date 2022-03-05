@@ -36,7 +36,6 @@ public class TelegramContact extends Contact {
     public void sendMessage(String message) {
         var msg = new SendMessage();
         msg.setText(message);
-        msg.enableMarkdownV2(true);
         msg.setChatId(String.valueOf(getID()));
         try {
             adapter.execute(msg);
